@@ -4,10 +4,6 @@ def Face():
 	global fac
 	if var_face.get()=="лицо":
 		fac=draw.create_oval((5, 5, 290, 290),fill="pink",outline="black")
-		Nose()
-		Eyes()
-		Mouth()
-		Freckles()
 	else:
 		draw.delete(fac)
 eye=""
@@ -42,7 +38,7 @@ def Freckles():
 		a2=draw.create_line((227,169,230,169),fill="brown",width=2)
 		a3=draw.create_line((130,127,133,127),fill="brown",width=2)
 		a4=draw.create_line((147,173,150,173),fill="brown",width=2)
-		a5=draw.create_line((146,150,150,150),fill="brown",width=2)
+		a5=draw.create_line((146,150,149,150),fill="brown",width=2)
 		a6=draw.create_line((80,134,82,134),fill="brown",width=2)
 		a7=draw.create_line((174,181,177,181),fill="brown",width=2)
 		a8=draw.create_line((155,91,158,91),fill="brown",width=2)
