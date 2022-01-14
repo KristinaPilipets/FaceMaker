@@ -1,11 +1,12 @@
 from tkinter import * 
-
+faec=""
 def Face():
-	global fac
+	global faec
 	if var_face.get()=="лицо":
-		fac=draw.create_oval((5, 5, 290, 290),fill="pink",outline="black")
+		faec=draw.create_oval((5, 5, 290, 290),fill="pink",outline="black")
 	else:
-		draw.delete(fac)
+		draw.delete(faec)
+
 eye=""
 def Nose():
 	global eye
@@ -13,6 +14,7 @@ def Nose():
 		eye=draw.create_polygon([(150, 163), (181, 163), (150,130 )],fill="grey")
 	else:
 		draw.delete(eye)
+
 a=""
 def Mouth():
 	global a
@@ -20,6 +22,7 @@ def Mouth():
 		a=draw.create_line((213, 215, 90, 215),fill="black",width=3)
 	else:
 		draw.delete(a)
+
 b=c=d=e=""
 def Eyes():
 	global b,c,d,e
@@ -30,6 +33,7 @@ def Eyes():
 		e=draw.create_oval((175,82,211,120),fill="black")
 	else:
 		draw.delete(b,c,d,e)
+
 a1=a2=a3=a4=a5=a6=a7=a8=a9=a10=a11=a12=""
 def Freckles():
 	global a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12

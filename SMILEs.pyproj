@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>82e77607-661d-437f-94b5-609fc3e939ff</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>SMILEs.py</StartupFile>
+    <StartupFile>variant2.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -25,6 +25,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="SMILEs.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="variant2.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
