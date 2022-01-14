@@ -55,9 +55,9 @@ def Freckles():
 
 tk=Tk()
 tk.title("Фоторобот")
-tk.geometry("700x400")
-f1=Frame(tk,width=300,height=300)
-f2=Frame(tk,width=400,height=400)
+tk.geometry("700x350")
+f1=Frame(tk,width=300,height=350)
+f2=Frame(tk,width=400,height=350)
 draw=Canvas(f2,width=300,height=300,bg="lightgreen")
 draw.pack()
 f1.pack(side=LEFT)
@@ -66,23 +66,23 @@ name=Label(f1,text="Создание фоторобота",font="Calibri 26",fg=
 name.pack(side=TOP)
 
 var_face=StringVar()
-face=Checkbutton(f1,text="Лицо",font="Calibri 26",fg="black",bg="lightgreen",relief=GROOVE,variable=var_face,offvalue="убрать",onvalue="лицо",command=Face)
+face=Checkbutton(f1,text="Лицо",font="Calibri 26",fg="black",bg="green",relief=GROOVE,variable=var_face,offvalue="убрать",onvalue="лицо",command=Face)
 face.deselect()
 
 var_mouth=StringVar()
-mouth=Checkbutton(f1,text="Рот",font="Calibri 26",fg="black",bg="lightgreen",relief=GROOVE,variable=var_mouth,onvalue="рот",offvalue="убрать",command=Mouth)
+mouth=Checkbutton(f1,text="Рот",font="Calibri 26",fg="black",bg="green",relief=GROOVE,variable=var_mouth,onvalue="рот",offvalue="убрать",command=Mouth)
 mouth.deselect()
 
 var_nose=StringVar()
-nose=Checkbutton(f1,text="Нос",font="Calibri 26",fg="black",bg="lightgreen",relief=GROOVE,variable=var_nose,onvalue="нос",offvalue="убрать",command=Nose)
+nose=Checkbutton(f1,text="Нос",font="Calibri 26",fg="black",bg="green",relief=GROOVE,variable=var_nose,onvalue="нос",offvalue="убрать",command=Nose)
 nose.deselect()
 
 var_eyes=StringVar()
-eyes=Checkbutton(f1,text="Глаза",font="Calibri 26",fg="black",bg="lightgreen",relief=GROOVE,variable=var_eyes,onvalue="глаза",offvalue="убрать",command=Eyes)
+eyes=Checkbutton(f1,text="Глаза",font="Calibri 26",fg="black",bg="green",relief=GROOVE,variable=var_eyes,onvalue="глаза",offvalue="убрать",command=Eyes)
 eyes.deselect()
 
 var_freckles=StringVar()
-freckles=Checkbutton(f1,text="веснушки",font="Calibri 26",fg="black",bg="lightgreen",relief=GROOVE,variable=var_freckles,onvalue="весн",offvalue="убрать",command=Freckles)
+freckles=Checkbutton(f1,text="веснушки",font="Calibri 26",fg="black",bg="green",relief=GROOVE,variable=var_freckles,onvalue="весн",offvalue="убрать",command=Freckles)
 freckles.deselect()
 
 face.pack()
